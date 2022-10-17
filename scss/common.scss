@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'UTM Banque';
+  src: url('fonts/transfonter/UTMBanqueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UTM Banque';
+  src: url('fonts/transfonter/UTMBanque.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UTM Hanzel';
+  src: url('fonts/transfonter/UTMHanzel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KIAM';
+  src: url('fonts/transfonter/KIAM.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  font-family: 'UTM Banque';
+}
+
+@import "common/header";
+@import "common/footer";
+
+
+.section-w-title {
+  & > .text-title , & > h1 {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "UTM Hanzel";
+    font-weight: bold;
+    font-size: 35px;
+  }
+}

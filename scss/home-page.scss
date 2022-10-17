@@ -1,0 +1,302 @@
+@import "blocks/banner-carousel";
+
+.product-list {
+  overflow: hidden;
+}
+
+.product-menu {
+  .nav-pills {
+    .nav-item {
+      .nav-link {
+        color: #919191;
+        border-radius: unset;
+
+        &.active {
+          color: #212121;
+          background-color: unset;
+          border-bottom: 2px solid #ac2b31;
+        }
+      }
+    }
+  }
+}
+
+.swiper-product {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    transition: 0.3s;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+
+    .car-detail {
+      opacity: 0;
+      transition: 0.3s;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+
+        &:hover {
+          color: red;
+        }
+      }
+
+      .car-name, .car-price {
+        color: black;
+        text-transform: uppercase;
+      }
+
+      .car-slogan {
+        color: #acacac;
+      }
+    }
+
+    img {
+      opacity: 0.5;
+      transition: 0.3s;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .swiper-slide-active {
+    img {
+      opacity: 1;
+    }
+
+    .car-detail {
+      opacity: 1;
+    }
+  }
+
+}
+
+.column-option {
+  width: 100%;
+
+  .row-column {
+    width: 100%;
+    display: flex;
+
+    @media (max-width: 991.98px) {
+      overflow-x: scroll;
+      position: relative;
+
+      &.icon-swipe-left:after {
+        content: "";
+        background-image: url("/images/icon/icon-swipe-left/white-2@0.25x.png");
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        right: 30px;
+        margin-bottom: auto;
+        background-repeat: no-repeat;
+        z-index: 100;
+        transition: 0.3s;
+        animation: swipeRightSide 1s linear 0s infinite alternate;;
+      }
+
+      @keyframes swipeRightSide {
+        0%   {right:30px;}
+        50%  {right:40px; }
+        100% {right:30px; }
+      }
+    }
+
+    .col {
+      width: calc(100% / 4);
+      height: 600px;
+      padding: 5px;
+
+      @media (max-width: 991.98px) {
+        width: calc(100% / 2);
+        height: 500px;
+        flex-basis: auto;
+      }
+
+      @media (max-width: 767.98px) {
+        width: 100%;
+        height: 500px;
+        flex-basis: auto;
+      }
+
+      & > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        .bg-image {
+          .overlay {
+            width: 0%;
+          }
+        }
+      }
+
+      .bg-image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        transition: 0.3s;
+
+        .overlay {
+          background-color: black;
+          opacity: 0.4;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          transition: 0.3s;
+        }
+
+        .content {
+          width: 90%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          bottom: 30px;
+
+          color: white;
+          z-index: 2;
+
+          .button-click {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.news {
+  overflow: hidden;
+
+  .news-swiper{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (max-width: 991.98px) {
+      overflow-x: scroll;
+      position: relative;
+
+      &.icon-swipe-left:after {
+        content: "";
+        background-image: url("/images/icon/icon-swipe-left/white-2@0.25x.png");
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        right: 30px;
+        margin-bottom: auto;
+        background-repeat: no-repeat;
+        z-index: 100;
+        transition: 0.3s;
+        animation: swipeRightSide 1s linear 0s infinite alternate;;
+      }
+
+      @keyframes swipeRightSide {
+        0%   {right:30px;}
+        50%  {right:40px; }
+        100% {right:30px; }
+      }
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 40%;
+      opacity: 0.5;
+      transition: 0.3s;
+
+      @media (max-width: 991.98px) {
+        width: 70%;
+      }
+
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-height: 350px;
+      }
+
+      &.swiper-slide-active {
+        opacity: 1;
+      }
+    }
+
+    .news-slide {
+      a {
+        text-decoration: none;
+      }
+      .col-date {
+        border-bottom: 2px solid #ac2b31;
+        padding-top: 20px;
+      }
+      .col-info {
+        border-bottom: 2px solid #f3f3f3;
+        padding-top: 20px;
+      }
+
+      ul.news-date {
+        list-style: none;
+        padding-left: 0;
+        color: #ac2b31;
+        font-weight: bold;
+
+        .date {
+          font-size: 15px;
+        }
+
+        .year {
+          font-size: 13px;
+        }
+      }
+
+      .news-info {
+        .news-title {
+          color: #1f1f1f;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+          a {
+            color: #1f1f1f;
+            text-decoration: none;
+          }
+        }
+
+        .news-description {
+          color: #1f1f1f;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

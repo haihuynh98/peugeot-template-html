@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="/js/bootstrap/bootstrap.js"></script>
+    <script src="/js/jquery.min.js"></script>
+
+</head>
+<body>
+
+<section class="nav-main" id="nav_main">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-around align-items-center w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Về Peugoet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giá xe</a>
+                    </li>
+                    <a href="#"><img src="/images/logo-kia-new.png"></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tin tức và ưu đãi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="banner-carousel" id="banner_carousel">
+    <!-- Swiper -->
+    <div class="swiper banner-carousel-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://kiavietnam.com.vn/storage/banner-ctbh-thang/t9-2022/banner-web-t9-khong-uu-dai-01.jpg"
+                         class="img-fluid w-100 swiper-lazy" alt="Home banner">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://kiavietnam.com.vn/storage/banner-ctbh-thang/t8-2022/banner-web-1982022-0-03.jpg"
+                         class="img-fluid w-100 swiper-lazy" alt="Home banner">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+
+                    <img src="https://kiavietnam.com.vn/storage/banner-ctbh-thang/t9-2022/banner-web-t9-khong-uu-dai-04.jpg"
+                         class="img-fluid w-100 swiper-lazy" alt="Home banner">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://kiavietnam.com.vn/storage/banner-ctbh-thang/t9-2022/banner-web-t9-khong-uu-dai-05.jpg"
+                         class="img-fluid w-100 swiper-lazy" alt="Home banner">
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".banner-carousel-swiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</section>
+
+<section class="product-list section-w-title" id="product_list">
+    <h1 class="text-title text-center text-uppercase">Sản phẩm</h1>
+
+    <div class="container-fluid">
+        <div class="product-slide" id="product_slide">
+            <div class="product-menu">
+                <ul class="nav nav-pills justify-content-center" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#mvp">MVP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#suv">SUV</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-tab">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="mvp" class=" tab-pane active"><br>
+                        <!-- Swiper -->
+                        <div class="swiper-product car-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://kiavietnam.com.vn/storage/soluto/color/246-x-130-01.png"/>
+                                    <div class="car-detail">
+                                        <a href="https://kiavietnam.com.vn/chi-tiet-san-pham/new-morning">
+                                            <h4> New Morning</h4>
+                                        </a>
+                                        <div class="car-slogan text-15">Sắc màu thời trang - Khẳng định phong cách</div>
+                                        <div class="car-price text-15">Giá chỉ từ</div>
+                                        <div class="car-price text-20">
+                                            359,000,000<sup>đ</sup>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://kiavietnam.com.vn/storage/product/new-morning-logo-moi/logo-moi/kia-moring-2.jpg"/>
+                                    <div class="car-detail">
+                                        <a href="https://kiavietnam.com.vn/chi-tiet-san-pham/new-morning">
+                                            <h4> New Morning</h4>
+                                        </a>
+                                        <div class="car-slogan text-15">Sắc màu thời trang - Khẳng định phong cách</div>
+                                        <div class="car-price text-15">Giá chỉ từ</div>
+                                        <div class="car-price text-20">
+                                            359,000,000<sup>đ</sup>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://kiavietnam.com.vn/storage/product/soluto-logo-moi/soluto-luxury-l-copy.png"/>
+                                    <div class="car-detail">
+                                        <a href="https://kiavietnam.com.vn/chi-tiet-san-pham/new-morning">
+                                            <h4 class="car-name"> New Morning</h4>
+                                        </a>
+                                        <div class="car-slogan text-15">Sắc màu thời trang - Khẳng định phong cách</div>
+                                        <div class="car-price text-15">Giá chỉ từ</div>
+                                        <div class="car-price text-20">
+                                            359,000,000<sup>đ</sup>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://kiavietnam.com.vn/storage/product/sonet/sonet-1.png"/>
+                                    <div class="car-detail">
+                                        <a href="https://kiavietnam.com.vn/chi-tiet-san-pham/new-morning">
+                                            <div class="car-name text-20">New Morning</div>
+                                        </a>
+                                        <div class="car-slogan text-15">Sắc màu thời trang - Khẳng định phong cách</div>
+                                        <div class="car-price text-15">Giá chỉ từ</div>
+                                        <div class="car-price text-20">
+                                            359,000,000<sup>đ</sup>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper(".car-swiper", {
+                                effect: "coverflow",
+                                grabCursor: true,
+                                centeredSlides: true,
+                                slidesPerView: "auto",
+                                coverflowEffect: {
+                                    rotate: 0,
+                                    stretch: 0,
+                                    depth: 50,
+                                    modifier: 1,
+                                    scale: 0.8,
+                                    slideShadows: false
+                                },
+                                pagination: {
+                                    el: ".swiper-pagination"
+                                },
+                                navigation: {
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                }
+                            });
+                        </script>
+                    </div>
+                    <div id="suv" class=" tab-pane fade"><br>
+                        <h3 class="text-center">Comming soon ...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="column-option section-w-title" id="column_option">
+    <h1 class="text-title text-center text-uppercase">Sản phẩm</h1>
+    <div class="container-fluid">
+        <div class="row-column icon-swipe-left">
+            <div class="col">
+                <a href="#">
+                    <div class="bg-image"
+                         style="background-image: url('https://kiavietnam.com.vn/storage/driving.jpg')">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <h2 class="title">So sánh xe</h2>
+                            <span class="text-14 text-detail">So sánh thông số chi tiết từng dòng xe của KIA</span>
+                            <div class="button-click">
+                                <span class="text-12">Khám phá ngay </span>
+
+                                <img src="https://kiavietnam.com.vn/themes/main/images/home/muaxe/button.png"
+                                     alt="Kia Viet Nam" class="img-fluid">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="bg-image"
+                         style="background-image: url('https://kiavietnam.com.vn/storage/banner-ttud.jpg')">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <h2 class="title">So sánh xe</h2>
+                            <span class="text-14 text-detail">So sánh thông số chi tiết từng dòng xe của KIA</span>
+                            <div class="button-click">
+                                <span class="text-12">Khám phá ngay </span>
+
+                                <img src="https://kiavietnam.com.vn/themes/main/images/home/muaxe/button.png"
+                                     alt="Kia Viet Nam" class="img-fluid">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="bg-image"
+                         style="background-image: url('https://kiavietnam.com.vn/storage/seltos-1.jpg')">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <h2 class="title">So sánh xe</h2>
+                            <span class="text-14 text-detail">So sánh thông số chi tiết từng dòng xe của KIA</span>
+                            <div class="button-click">
+                                <span class="text-12">Khám phá ngay </span>
+
+                                <img src="https://kiavietnam.com.vn/themes/main/images/home/muaxe/button.png"
+                                     alt="Kia Viet Nam" class="img-fluid">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="bg-image"
+                         style="background-image: url('https://kiavietnam.com.vn/storage/img-lines.jpg')">
+                        <div class="overlay"></div>
+
+                        <div class="content">
+                            <h2 class="title">So sánh xe</h2>
+                            <span class="text-14 text-detail">So sánh thông số chi tiết từng dòng xe của KIA</span>
+                            <div class="button-click">
+                                <span class="text-12">Khám phá ngay </span>
+
+                                <img src="https://kiavietnam.com.vn/themes/main/images/home/muaxe/button.png"
+                                     alt="Kia Viet Nam" class="img-fluid">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.row-column').scroll(function (event) {
+                if ($(this).hasClass('icon-swipe-left')) {
+                    $(this).removeClass('icon-swipe-left');
+                }
+            });
+        });
+    </script>
+</section>
+
+<section class="news section-w-title container" id="news">
+    <h1 class="text-title text-center text-uppercase">Tin tức</h1>
+    <div class="container-fluid">
+        <!-- Swiper -->
+        <div class="news-swiper mySwiper icon-swipe-left">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide news-slide">
+                    <a href="#">
+                        <img src="https://kiavietnam.com.vn/storage/product/sportage/3.jpg"/>
+                        <div class="row">
+                            <div class="col-3 col-date">
+                                <div class="news-date">
+                                    <ul class="news-date">
+                                        <li class="date">
+                                            23-06
+                                        </li>
+                                        <li class="year">
+                                            2022
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-9 col-info">
+                                <div class="news-info">
+                                    <h3 class="news-title">
+                                        THACO AUTO CHÍNH THỨC XUẤT XƯỞNG MẪU XE KIA SPORTAGE THẾ HỆ HOÀN TOÀN...
+                                    </h3>
+                                    <p class="news-description text-10">
+                                        Vừa qua, THACO AUTO chính thức xuất xưởng Kia Sportage – mẫu xe KIA SUV cao cấp
+                                        thế hệ hoàn toà...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide news-slide">
+                    <a href="#">
+                        <img src="https://kiavietnam.com.vn/storage/bai-dang-t6-2022/sportage/image-2022-04-12t01-22-26-769z.png"/>
+                        <div class="row">
+                            <div class="col-3 col-date">
+                                <div class="news-date">
+                                    <ul class="news-date">
+                                        <li class="date">
+                                            23-06
+                                        </li>
+                                        <li class="year">
+                                            2022
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-9 col-info">
+                                <div class="news-info">
+                                    <h3 class="news-title">
+                                        THACO AUTO CHÍNH THỨC XUẤT XƯỞNG MẪU XE KIA SPORTAGE THẾ HỆ HOÀN TOÀN...
+                                    </h3>
+                                    <p class="news-description text-10">
+                                        Vừa qua, THACO AUTO chính thức xuất xưởng Kia Sportage – mẫu xe KIA SUV cao cấp
+                                        thế hệ hoàn toà...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide news-slide">
+                    <a href="#">
+                        <img src="https://kiavietnam.com.vn/storage/bai-dang-t3-2022/16-k3-gt/kia-25th3n2022-1.png"/>
+                        <div class="row">
+                            <div class="col-3 col-date">
+                                <div class="news-date">
+                                    <ul class="news-date">
+                                        <li class="date">
+                                            23-06
+                                        </li>
+                                        <li class="year">
+                                            2022
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-9 col-info">
+                                <div class="news-info">
+                                    <h3 class="news-title">
+                                        THACO AUTO CHÍNH THỨC XUẤT XƯỞNG MẪU XE KIA SPORTAGE THẾ HỆ HOÀN TOÀN...
+                                    </h3>
+                                    <p class="news-description text-10">
+                                        Vừa qua, THACO AUTO chính thức xuất xưởng Kia Sportage – mẫu xe KIA SUV cao cấp
+                                        thế hệ hoàn toà...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                scale: 0.8,
+                stretch: -50,
+                depth: 50,
+                modifier: 1,
+                slideShadows: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        swiper.on('slideChange', function () {
+            if ($('.news-swiper').hasClass('icon-swipe-left')) {
+                $('.news-swiper').removeClass('icon-swipe-left');
+            }
+        });
+    </script>
+</section>
+
+<footer class="footer-main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12 col-company-info">
+                <ul class="company">
+                    <li class="company-info">
+                        <ul>
+                            <li class="name">
+                                <span>CÔNG TY TNHH PHÂN PHỐI THACO AUTO</span>
+                            </li>
+                            <li class="lisence">
+                                    <span class="text-footer">GIẤY CNĐKDN:
+                                        4000779880 NGÀY CẤP 27/10/2010</span>
+                            </li>
+                            <li class="lisence">
+                                    <span class="text-footer">CƠ QUAN CẤP:
+                                        PHÒNG ĐĂNG KÝ KINH DOANH SỞ KẾ HOẠCH VÀ ĐẦU TƯ TỈNH QUẢNG NAM</span>
+                            </li>
+                            <li class="lisence">
+                                    <span class="text-footer">ĐỊA CHỈ:
+                                        THÔN 4, XÃ TAM HIỆP, HUYỆN NÚI THÀNH, TỈNH QUẢNG NAM, VIỆT NAM</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="site">
+
+                        <div class="text-info pt-3">
+                            <a class="text-16" href="http://online.gov.vn/Home/WebDetails/29714?AspxAutoDetectCookieSupport=1" target="_blank">
+                                <img src="https://kiavietnam.com.vn/themes/main/images/general/bct.png" class="img-fluid" alt="BCT">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="copyright">
+                        © 2020 KIA Motors Viet Nam. All right reserved.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-1 col-md-12 col-12 col-has-menu">
+                <h4 class="title-footer-menu">Sản phẩm</h4>
+
+                <ul class="footer-menu">
+                    <li class="menu-item"><a href="">2008</a></li>
+                    <li class="menu-item"><a href="">3008</a></li>
+                    <li class="menu-item"><a href="">5008</a></li>
+                    <li class="menu-item"><a href="">Traveller</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-12 col-has-menu">
+                <h4 class="title-footer-menu">Chính sách</h4>
+
+                <ul class="footer-menu">
+                    <li class="menu-item"><a href="">Chính sách thanh toán</a></li>
+                    <li class="menu-item"><a href="">Chính sách bảo mật thông tin</a></li>
+                    <li class="menu-item"><a href="">Chính sách giao nhận - vận chuyển</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12 col-has-menu">
+                <h4 class="title-footer-menu">Liên hệ với chúng tôi</h4>
+
+                <ul class="footer-menu">
+                    <li class="menu-item"><a href="tell:1234565656">HOTLINE: 1234 56 56 56</a></li>
+                    <li class="menu-item"><a href="mailto:cskh@peugeotvietnam.com">cskh@peugeotvietnam.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

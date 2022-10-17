@@ -1,0 +1,67 @@
+.footer-main {
+  padding: 50px 30px;
+  background-color: #222;
+  color: white;
+
+  @media (max-width: 767.98px) {
+    padding: 50px 10px;
+  }
+
+  * {
+    font-family: 'KIAM';
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .col-company-info {
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        padding-bottom: 10px;
+      }
+
+      .name {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .lisence {
+        font-size: 13px;
+        color: #919191;
+      }
+    }
+
+    .copyright {
+      font-size: 13px;
+      color: #535353;
+    }
+  }
+
+  .col-has-menu {
+    .title-footer-menu {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        padding-bottom: 10px;
+      }
+
+      a {
+        color: #919191;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,285 @@
+.banner-carousel .swiper-button-next, .banner-carousel .swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+}
+.banner-carousel .swiper-button-prev {
+  background-image: url("/images/icon/slide-left-icon.png") !important;
+  left: 50px;
+}
+.banner-carousel .swiper-button-next {
+  background-image: url("/images/icon/slide-right-icon.png") !important;
+  right: 50px;
+}
+
+.product-list {
+  overflow: hidden;
+}
+
+.product-menu .nav-pills .nav-item .nav-link {
+  color: #919191;
+  border-radius: unset;
+}
+.product-menu .nav-pills .nav-item .nav-link.active {
+  color: #212121;
+  background-color: unset;
+  border-bottom: 2px solid #ac2b31;
+}
+
+.swiper-product {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-product .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  transition: 0.3s;
+}
+@media (max-width: 767.98px) {
+  .swiper-product .swiper-slide {
+    width: 100%;
+  }
+}
+.swiper-product .swiper-slide .car-detail {
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+.swiper-product .swiper-slide .car-detail a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.swiper-product .swiper-slide .car-detail a:hover {
+  color: red;
+}
+.swiper-product .swiper-slide .car-detail .car-name, .swiper-product .swiper-slide .car-detail .car-price {
+  color: black;
+  text-transform: uppercase;
+}
+.swiper-product .swiper-slide .car-detail .car-slogan {
+  color: #acacac;
+}
+.swiper-product .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+}
+.swiper-product .swiper-slide-active img {
+  opacity: 1;
+}
+.swiper-product .swiper-slide-active .car-detail {
+  opacity: 1;
+}
+
+.column-option {
+  width: 100%;
+}
+.column-option .row-column {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .column-option .row-column {
+    overflow-x: scroll;
+    position: relative;
+  }
+  .column-option .row-column.icon-swipe-left:after {
+    content: "";
+    background-image: url("/images/icon/icon-swipe-left/white-2@0.25x.png");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    right: 30px;
+    margin-bottom: auto;
+    background-repeat: no-repeat;
+    z-index: 100;
+    transition: 0.3s;
+    animation: swipeRightSide 1s linear 0s infinite alternate;
+  }
+  @keyframes swipeRightSide {
+    0% {
+      right: 30px;
+    }
+    50% {
+      right: 40px;
+    }
+    100% {
+      right: 30px;
+    }
+  }
+}
+.column-option .row-column .col {
+  width: 25%;
+  height: 600px;
+  padding: 5px;
+}
+@media (max-width: 991.98px) {
+  .column-option .row-column .col {
+    width: 50%;
+    height: 500px;
+    flex-basis: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .column-option .row-column .col {
+    width: 100%;
+    height: 500px;
+    flex-basis: auto;
+  }
+}
+.column-option .row-column .col > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.column-option .row-column .col:hover .bg-image .overlay {
+  width: 0%;
+}
+.column-option .row-column .col .bg-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: 0.3s;
+}
+.column-option .row-column .col .bg-image .overlay {
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+.column-option .row-column .col .bg-image .content {
+  width: 90%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 30px;
+  color: white;
+  z-index: 2;
+}
+.column-option .row-column .col .bg-image .content .button-click {
+  text-align: right;
+}
+
+.news {
+  overflow: hidden;
+}
+.news .news-swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 991.98px) {
+  .news .news-swiper {
+    overflow-x: scroll;
+    position: relative;
+  }
+  .news .news-swiper.icon-swipe-left:after {
+    content: "";
+    background-image: url("/images/icon/icon-swipe-left/white-2@0.25x.png");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    right: 30px;
+    margin-bottom: auto;
+    background-repeat: no-repeat;
+    z-index: 100;
+    transition: 0.3s;
+    animation: swipeRightSide 1s linear 0s infinite alternate;
+  }
+  @keyframes swipeRightSide {
+    0% {
+      right: 30px;
+    }
+    50% {
+      right: 40px;
+    }
+    100% {
+      right: 30px;
+    }
+  }
+}
+.news .news-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+@media (max-width: 991.98px) {
+  .news .news-swiper .swiper-slide {
+    width: 70%;
+  }
+}
+@media (max-width: 767.98px) {
+  .news .news-swiper .swiper-slide {
+    width: 100%;
+  }
+}
+.news .news-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+}
+.news .news-swiper .swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+.news .news-swiper .news-slide a {
+  text-decoration: none;
+}
+.news .news-swiper .news-slide .col-date {
+  border-bottom: 2px solid #ac2b31;
+  padding-top: 20px;
+}
+.news .news-swiper .news-slide .col-info {
+  border-bottom: 2px solid #f3f3f3;
+  padding-top: 20px;
+}
+.news .news-swiper .news-slide ul.news-date {
+  list-style: none;
+  padding-left: 0;
+  color: #ac2b31;
+  font-weight: bold;
+}
+.news .news-swiper .news-slide ul.news-date .date {
+  font-size: 15px;
+}
+.news .news-swiper .news-slide ul.news-date .year {
+  font-size: 13px;
+}
+.news .news-swiper .news-slide .news-info .news-title {
+  color: #1f1f1f;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.news .news-swiper .news-slide .news-info .news-title a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+.news .news-swiper .news-slide .news-info .news-description {
+  color: #1f1f1f;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=home-page.css.map */
